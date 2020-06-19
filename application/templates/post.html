@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class="form">
+	<form method="POST" action="">
+		{{ form.hidden_tag() }}
+		<div class="form-group">
+			{{ form.recipe_name.label }}
+			{{ form.recipe_name }}
+			{% if form.recipe_name.errors %}
+			<div class="error">
+				{% for error in form.recipe_name.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+			{{ form.meal_type.label }}
+			{{ form.meal_type }}
+			{% if form.meal_type.errors %}
+			<div class="error">
+				{% for error in form.meal_type.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+			{{ form.dietary_requirements.label }}
+			{{ form.dietary_requirements }}
+			{% if form.dietary_requirements.errors %}
+			<div class="error">
+				{% for error in form.dietary_requirements.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+			{{ form.difficulty.label }}
+			{{ form.difficulty }}
+			{% if form.difficulty.errors %}
+			<div class="error">
+				{% for error in form.difficulty.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+			{{ form.number_of_servings.label }}
+			{{ form.number_of_servings }}
+			{% if form.number_of_servings.errors %}
+			<div class="error">
+				{% for error in form.number_of_servings.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+			{{ form.ingredients.label }}
+			{{ form.ingredients }}
+			{% if form.ingredients.errors %}
+			<div class="error">
+				{% for error in form.ingredients.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+			{{ form.method.label }}
+			{{ form.method }}
+			{% if form.method.errors %}
+			<div class="error">
+				{% for error in form.method.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+		    {{ form.submit }}
+		</div>
+	</form>
+</div>
+{% endblock body_content %}
