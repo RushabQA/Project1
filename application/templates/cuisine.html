@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class="form">
+	<form method="POST" action="">
+		{{ form.hidden_tag() }}
+		<div class="form-group">
+			{{ form.cuisine_name.label }}
+			{{ form.cuisine_name }}
+			{% if form.cuisine_name.errors %}
+			<div class="error">
+				{% for error in form.cuisine_name.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+			{{ form.region.label }}
+			{{ form.region }}
+			{% if form.region.errors %}
+			<div class="error">
+				{% for error in form.region.errors %}
+				    <span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+		<br>
+		<div class="form-group">
+		    {{ form.submit }}
+		</div>
+	</form>
+</div>
+{% endblock body_content %}

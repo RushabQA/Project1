@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-from application.models import Users
+from application.models import Users, Cuisine, Recipe
 from flask_login import current_user
 
 class RecipeForm(FlaskForm):
@@ -45,6 +45,69 @@ class RecipeForm(FlaskForm):
         validators = [
             DataRequired(),
             Length(min=2, max=500)
+        ]
+    )
+    submit = SubmitField('Post!')
+
+
+
+class UpdateRecipeForm(FlaskForm):
+    recipe_name = StringField('Recipe name',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=100)
+        ]
+    )
+    meal_type = StringField('Meal Type',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=100)
+        ]
+    )
+    dietary_requirements = StringField('Dietary Requirements',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=100)
+        ]
+    )
+    difficulty = StringField('Difficulty',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=200)
+        ]
+    )
+    number_of_servings = StringField('Number Of Servings',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=200)
+        ]
+    )
+    ingredients = StringField('Ingredients',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=400)
+        ]
+    )
+    method = StringField('Method',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=500)
+        ]
+    )
+    submit = SubmitField('Post!')
+
+
+class CuisineForm(FlaskForm):
+    cuisine_name = StringField('Cuisine name',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=100)
+        ]
+    )
+    region = StringField('Region',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=100)
         ]
     )
     submit = SubmitField('Post!')
