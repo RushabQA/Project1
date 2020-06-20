@@ -71,7 +71,8 @@ def recipe():
                         number_of_servings=form.number_of_servings.data,
                         ingredients=form.ingredients.data,
                         method=form.method.data,
-			author=current_user
+			author=current_user,
+                        cuisine_id=int(form.cuisine.data)
 		)
 		db.session.add(recipeData)
 		db.session.commit()
@@ -82,9 +83,10 @@ def recipe():
 	return render_template('recipe.html', title='Recipe', form=form)
 
 
-@app.route('/update', methods=['GET', 'POST'])
-def update():
+@app.route('/update/recipe/<int:id>', methods=['GET', 'POST'])
+def update(id):
     form = UpdateRecipeForm()
+    recipe = Recipe.query.filter_by(id=id).first()
     if form.validate_on_submit():
         recipe.recipe_name=form.recipe_name.data
         recipe.meal_type=form.meal_type.data
@@ -98,14 +100,13 @@ def update():
     return render_template('update.html', title='update',form=form)
 
 
-@app.route('/recipe/delete', methods=['GET', 'POST'])
+@app.route('/recipe/delete/<int:id>', methods=['GET', 'POST'])
 @login_required
-def recipe_delete():
-        user = current_user.id
-        recipe = Recipe.query.filter_by(recipe_name=form.recipe_name.data).first()
-        db.session.delete(recipe)
-        db.session.commit()
-        return redirect(url_for('home'))
+def recipe_delete(id):
+    recipe = Recipe.query.filter_by(id=id).first()
+    db.session.delete(recipe)
+    db.session.commit()
+    return redirect(url_for('home'))
 
 
 @app.route('/cuisine', methods=['GET', 'POST'])

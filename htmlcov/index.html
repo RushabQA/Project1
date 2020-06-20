@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">14%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+<div id="index">
+    <table class="index">
+        <thead>
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>14814</td>
+                <td>12758</td>
+                <td>82</td>
+                <td class="right" data-ratio="2056 14814">14%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest__argcomplete_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/_argcomplete.py</a></td>
+                <td>37</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 37">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest__code_code_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/_code/code.py</a></td>
+                <td>655</td>
+                <td>432</td>
+                <td>0</td>
+                <td class="right" data-ratio="223 655">34%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest__code_source_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/_code/source.py</a></td>
+                <td>244</td>
+                <td>180</td>
+                <td>0</td>
+                <td class="right" data-ratio="64 244">26%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest__io___init___py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/_io/__init__.py</a></td>
+                <td>23</td>
+                <td>15</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 23">35%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest__io_saferepr_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/_io/saferepr.py</a></td>
+                <td>63</td>
+                <td>48</td>
+                <td>0</td>
+                <td class="right" data-ratio="15 63">24%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_assertion___init___py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/assertion/__init__.py</a></td>
+                <td>79</td>
+                <td>75</td>
+                <td>0</td>
+                <td class="right" data-ratio="4 79">5%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_assertion_rewrite_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py</a></td>
+                <td>595</td>
+                <td>517</td>
+                <td>0</td>
+                <td class="right" data-ratio="78 595">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_cacheprovider_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/cacheprovider.py</a></td>
+                <td>278</td>
+                <td>241</td>
+                <td>0</td>
+                <td class="right" data-ratio="37 278">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_capture_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/capture.py</a></td>
+                <td>484</td>
+                <td>429</td>
+                <td>0</td>
+                <td class="right" data-ratio="55 484">11%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_compat_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/compat.py</a></td>
+                <td>180</td>
+                <td>157</td>
+                <td>2</td>
+                <td class="right" data-ratio="23 180">13%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_config___init___py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/config/__init__.py</a></td>
+                <td>654</td>
+                <td>560</td>
+                <td>0</td>
+                <td class="right" data-ratio="94 654">14%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_config_argparsing_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/config/argparsing.py</a></td>
+                <td>244</td>
+                <td>199</td>
+                <td>31</td>
+                <td class="right" data-ratio="45 244">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_debugging_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/debugging.py</a></td>
+                <td>197</td>
+                <td>188</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 197">5%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_doctest_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/doctest.py</a></td>
+                <td>332</td>
+                <td>323</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 332">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_faulthandler_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/faulthandler.py</a></td>
+                <td>53</td>
+                <td>42</td>
+                <td>0</td>
+                <td class="right" data-ratio="11 53">21%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_fixtures_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/fixtures.py</a></td>
+                <td>775</td>
+                <td>709</td>
+                <td>0</td>
+                <td class="right" data-ratio="66 775">9%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_helpconfig_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/helpconfig.py</a></td>
+                <td>120</td>
+                <td>111</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 120">8%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_junitxml_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/junitxml.py</a></td>
+                <td>350</td>
+                <td>348</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 350">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_logging_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/logging.py</a></td>
+                <td>359</td>
+                <td>294</td>
+                <td>0</td>
+                <td class="right" data-ratio="65 359">18%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_main_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/main.py</a></td>
+                <td>397</td>
+                <td>259</td>
+                <td>0</td>
+                <td class="right" data-ratio="138 397">35%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_mark___init___py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/mark/__init__.py</a></td>
+                <td>84</td>
+                <td>70</td>
+                <td>0</td>
+                <td class="right" data-ratio="14 84">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_mark_structures_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/mark/structures.py</a></td>
+                <td>173</td>
+                <td>168</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 173">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_monkeypatch_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/monkeypatch.py</a></td>
+                <td>148</td>
+                <td>136</td>
+                <td>0</td>
+                <td class="right" data-ratio="12 148">8%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_nodes_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/nodes.py</a></td>
+                <td>298</td>
+                <td>228</td>
+                <td>0</td>
+                <td class="right" data-ratio="70 298">23%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_pastebin_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/pastebin.py</a></td>
+                <td>64</td>
+                <td>63</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 64">2%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_pathlib_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/pathlib.py</a></td>
+                <td>218</td>
+                <td>204</td>
+                <td>0</td>
+                <td class="right" data-ratio="14 218">6%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_python_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/python.py</a></td>
+                <td>776</td>
+                <td>730</td>
+                <td>0</td>
+                <td class="right" data-ratio="46 776">6%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_reports_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/reports.py</a></td>
+                <td>244</td>
+                <td>234</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 244">4%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_resultlog_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/resultlog.py</a></td>
+                <td>68</td>
+                <td>66</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 68">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_runner_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/runner.py</a></td>
+                <td>269</td>
+                <td>227</td>
+                <td>0</td>
+                <td class="right" data-ratio="42 269">16%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_setuponly_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/setuponly.py</a></td>
+                <td>42</td>
+                <td>41</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 42">2%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_setupplan_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/setupplan.py</a></td>
+                <td>13</td>
+                <td>12</td>
+                <td>0</td>
+                <td class="right" data-ratio="1 13">8%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_skipping_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/skipping.py</a></td>
+                <td>101</td>
+                <td>97</td>
+                <td>0</td>
+                <td class="right" data-ratio="4 101">4%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_stepwise_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/stepwise.py</a></td>
+                <td>58</td>
+                <td>48</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 58">17%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_store_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/store.py</a></td>
+                <td>34</td>
+                <td>29</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 34">15%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_terminal_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/terminal.py</a></td>
+                <td>804</td>
+                <td>655</td>
+                <td>0</td>
+                <td class="right" data-ratio="149 804">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_tmpdir_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/tmpdir.py</a></td>
+                <td>87</td>
+                <td>80</td>
+                <td>0</td>
+                <td class="right" data-ratio="7 87">8%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages__pytest_warnings_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/_pytest/warnings.py</a></td>
+                <td>77</td>
+                <td>61</td>
+                <td>0</td>
+                <td class="right" data-ratio="16 77">21%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_attr__make_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/attr/_make.py</a></td>
+                <td>694</td>
+                <td>672</td>
+                <td>0</td>
+                <td class="right" data-ratio="22 694">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_attr_converters_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/attr/converters.py</a></td>
+                <td>27</td>
+                <td>25</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 27">7%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_importlib_metadata___init___py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/importlib_metadata/__init__.py</a></td>
+                <td>226</td>
+                <td>221</td>
+                <td>2</td>
+                <td class="right" data-ratio="5 226">2%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_importlib_metadata__compat_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/importlib_metadata/_compat.py</a></td>
+                <td>30</td>
+                <td>29</td>
+                <td>47</td>
+                <td class="right" data-ratio="1 30">3%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_more_itertools_more_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/more_itertools/more.py</a></td>
+                <td>933</td>
+                <td>924</td>
+                <td>0</td>
+                <td class="right" data-ratio="9 933">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_pluggy__tracing_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/pluggy/_tracing.py</a></td>
+                <td>41</td>
+                <td>31</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 41">24%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_pluggy_callers_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/pluggy/callers.py</a></td>
+                <td>122</td>
+                <td>86</td>
+                <td>0</td>
+                <td class="right" data-ratio="36 122">30%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_pluggy_hooks_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/pluggy/hooks.py</a></td>
+                <td>175</td>
+                <td>106</td>
+                <td>0</td>
+                <td class="right" data-ratio="69 175">39%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_pluggy_manager_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/pluggy/manager.py</a></td>
+                <td>195</td>
+                <td>153</td>
+                <td>0</td>
+                <td class="right" data-ratio="42 195">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__builtin_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_builtin.py</a></td>
+                <td>112</td>
+                <td>105</td>
+                <td>0</td>
+                <td class="right" data-ratio="7 112">6%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__code___init___py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_code/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__code_code_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_code/code.py</a></td>
+                <td>524</td>
+                <td>408</td>
+                <td>0</td>
+                <td class="right" data-ratio="116 524">22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__error_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_error.py</a></td>
+                <td>52</td>
+                <td>47</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 52">10%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__io_terminalwriter_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_io/terminalwriter.py</a></td>
+                <td>266</td>
+                <td>196</td>
+                <td>0</td>
+                <td class="right" data-ratio="70 266">26%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__path_common_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_path/common.py</a></td>
+                <td>278</td>
+                <td>186</td>
+                <td>0</td>
+                <td class="right" data-ratio="92 278">33%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__path_local_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_path/local.py</a></td>
+                <td>693</td>
+                <td>563</td>
+                <td>0</td>
+                <td class="right" data-ratio="130 693">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__vendored_packages_apipkg_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_vendored_packages/apipkg.py</a></td>
+                <td>148</td>
+                <td>125</td>
+                <td>0</td>
+                <td class="right" data-ratio="23 148">16%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_py__xmlgen_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/py/_xmlgen.py</a></td>
+                <td>170</td>
+                <td>168</td>
+                <td>0</td>
+                <td class="right" data-ratio="2 170">1%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_pytest_cov_compat_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/pytest_cov/compat.py</a></td>
+                <td>27</td>
+                <td>22</td>
+                <td>0</td>
+                <td class="right" data-ratio="5 27">19%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_pytest_cov_engine_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/pytest_cov/engine.py</a></td>
+                <td>222</td>
+                <td>202</td>
+                <td>0</td>
+                <td class="right" data-ratio="20 222">9%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="_home_rushab_n_shah__local_lib_python3_6_site-packages_pytest_cov_plugin_py.html">/home/rushab_n_shah/.local/lib/python3.6/site-packages/pytest_cov/plugin.py</a></td>
+                <td>202</td>
+                <td>177</td>
+                <td>0</td>
+                <td class="right" data-ratio="25 202">12%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="tests___init___py.html">tests/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.1</a>,
+            created at 2020-06-20 20:46
+        </p>
+    </div>
+</div>
+</body>
+</html>

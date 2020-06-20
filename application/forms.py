@@ -47,6 +47,11 @@ class RecipeForm(FlaskForm):
             Length(min=2, max=500)
         ]
     )
+    cuisine = StringField('Cuisine',
+        validators = [
+            DataRequired()
+            ]
+        )
     submit = SubmitField('Post!')
 
 

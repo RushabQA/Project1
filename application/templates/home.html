@@ -17,8 +17,14 @@
 	<p>Ingredients - {{ recipe.ingredients }}</p>
 	<p>Method - {{ recipe.method }}</p>
     </div>
+    <form action={{ url_for("update", id = recipe.id) }} method="POST">
+    
+	    <button type="submit"> update </button>
+    </form>
 
-
+	<form action={{ url_for('recipe_delete', id = recipe.id) }}>
+            <button type="submit">Delete your recipe</button>
+	</form>
 {% endfor %}	
 
 {% endblock %}

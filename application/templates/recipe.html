@@ -87,12 +87,13 @@
 			{% endif %}
 		</div>
 		<br>
+		{{ form.cuisine.label }}
+		{{ form.cuisine }}
+
 		<div class="form-group">
 		    {{ form.submit }}
 		</div>
 	</form>
-	<form action="{{ url_for('recipe_delete') }}">
-            <button type="submit">Delete your recipe</button>
 
 </div>
 {% endblock body_content %}
