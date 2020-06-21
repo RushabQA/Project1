@@ -83,10 +83,13 @@ I used trello to track the progress of my project from planning all the way to t
 
 I have outlined potential risks, their impacts and mitigation techniques that I may need if my application is breached.
 
+https://github.com/RushabQA/Project1/blob/master/Risk%20Assessment.pdf
+
 **Testing**
 
 I used pytest to run unit tests on my application. These are designed to test a function. If the test result returns the expected result, the test passes. Jenkins was used to provide information on which tests have passed and which have failed through the console output. A Debugger mode was also active throughout development to allow for dynamic testing.
 
+https://github.com/RushabQA/Project1/blob/master/Testing%20.pdf
 
 As the diagram above shows I had 55% coverage, but I had a few failed tests unfortunately. As my front-end application is working seamlessly, I must assume the failed tests are a result of errors while writing each test.
 
