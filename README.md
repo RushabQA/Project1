@@ -53,6 +53,8 @@ _Database Structure_
 
 I have created an entity relationship diagram to show the structure of my database and the relationships taking place between the tables.
 
+https://app.diagrams.net/#G1cTXvJhcYt7AlJXlm3zDB1WyqYjjADy3K
+
 The ERD above shows my database models a 1 mandatory to many optional relationship between User and Recipe and a one to many relationship between cuisine and recipe. While the primary and foreign key allow the tables to be linked.
 
 I had also hoped to add another table to the database which would store images of the dish that users create.
@@ -80,7 +82,6 @@ I used trello to track the progress of my project from planning all the way to t
 **Risk Assessment**
 
 I have outlined potential risks, their impacts and mitigation techniques that I may need if my application is breached.
-file:///C:/Users/rn_28/Documents/Risk%20Assessment.pdf
 
 **Testing**
 
