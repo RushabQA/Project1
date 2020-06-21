@@ -80,6 +80,7 @@ I used trello to track the progress of my project from planning all the way to t
 **Risk Assessment**
 
 I have outlined potential risks, their impacts and mitigation techniques that I may need if my application is breached.
+file:///C:/Users/rn_28/Documents/Risk%20Assessment.pdf
 
 **Testing**
 
