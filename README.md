@@ -53,7 +53,7 @@ _Database Structure_
 
 I have created an entity relationship diagram to show the structure of my database and the relationships taking place between the tables.
 
-https://app.diagrams.net/#G1cTXvJhcYt7AlJXlm3zDB1WyqYjjADy3K
+https://github.com/RushabQA/Project1/blob/master/ERD.pdf
 
 The ERD above shows my database models a 1 mandatory to many optional relationship between User and Recipe and a one to many relationship between cuisine and recipe. While the primary and foreign key allow the tables to be linked.
 
